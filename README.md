@@ -20,8 +20,8 @@ const screen = new LedScreen('screenWrapper', {
     gutter: 1,
 });
 
-let drawReact = (brush) => brush.drawRect(1, 1, 20, 10, '#ff8888');
-screen.mount(drawReact)
+let drawRect = (brush) => brush.drawRect(1, 1, 20, 10, '#ff8888');
+screen.mount(drawRect)
 ```
 
 ### API
