@@ -1,4 +1,8 @@
+### 说明
 模拟低分辨率显示屏幕
+
+### 演示
+待定
 
 ### 安装
 待定
@@ -19,3 +23,6 @@ const screen = new LedScreen('screenWrapper', {
 let drawReact = (brush) => brush.drawRect(1, 1, 20, 10, '#ff8888');
 screen.mount(drawReact)
 ```
+
+### API
+待定
