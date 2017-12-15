@@ -90,8 +90,8 @@ drawMatrix(x, y, mat, [color])
 ```
 **drawLetter** 显示单个字母
 ``` javascript
-@param {String} 单个字母
-@param {String} 字体名 ['big', 'small']
+@param letter {String} 单个字母
+@param fontName {String} 字体名 ['big', 'small']
 drawLetter (x, y, letter, fontName, color)
 ```
 待续...
