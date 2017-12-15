@@ -86,12 +86,12 @@ drawRect(x, y, width, height, color)
 **drawMatrix** 根据二维数组画图
 ``` javascript
 drawMatrix(x, y, mat, [color])
+//注意：1. 数组元素的值为 0 或 1；2. 如果 color 省略，那么数组元素的值必须是 css color string
 ```
-注意：1. 数组元素的值为 0 或 1；2. 如果 color 省略，那么数组元素的值必须是 css color string
 **drawLetter** 显示单个字母
 ``` javascript
-@param {String} 单个字母
-@param {String} 字体名 ['big', 'small']
+@param letter {String} 单个字母
+@param fontName {String} 字体名 ['big', 'small']
 drawLetter (x, y, letter, fontName, color)
 ```
 待续...
