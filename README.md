@@ -41,11 +41,11 @@ const screen = new LedScreen('wrapperId', option)
 
 #### screen 的方法
 - **turnOff** 关闭屏幕
-screen.turnOff()
+`screen.turnOff()`
 - **turnOn** 打开屏幕
-screen.turnOn()
+`screen.turnOn()`
 - **destroy** 销毁屏幕
-screen.destroy()
+`screen.destroy()`
 - **mount** 加载显示函数
 ``` javascript
 screen.mount(function(brush, mousePos){
@@ -54,9 +54,9 @@ screen.mount(function(brush, mousePos){
 })
 ```
 - **unmount** 卸载显示函数
-screen.unmount(fnName)
+`screen.unmount(fnName)`
 - **unmountAll** 卸载所有显示函数
-screen.unmountAll()
+`screen.unmountAll()`
 - **on** 监听事件（目前仅支持点击事件）
 ``` javascript
 screen.on("click", function(mousePos) {
