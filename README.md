@@ -73,3 +73,6 @@ const screen = new LedScreen('wrapperId', option)
   - `fontName` {String} 字体名，合法值：`big` 和 `small`
 
 - `brush.drawWords(x, y, words, fontName, color)` 显示一个或多个单词
+- `brush.drawImage(imgPath, x, y, dw)` 显示图片
+  - `imgPath` {String} 图片路径
+  - `dw` {Number} 图片在 ledScreen 上的宽度
