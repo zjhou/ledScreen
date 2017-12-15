@@ -27,7 +27,9 @@ screen.mount(drawRect)
 ```
 
 ### API
-`const screen = new LedScreen('wrapperId', option)`
+``` javascript
+const screen = new LedScreen('wrapperId', option)
+```
 
 #### option
 屏幕配置项
@@ -45,7 +47,7 @@ screen.turnOn()
 - **destroy** 销毁屏幕
 screen.destroy()
 - **mount** 加载显示函数
-```
+``` javascript
 screen.mount(function(brush, mousePos){
   // use brush draw something.
   // mousePos.x mousePos.y 鼠标在屏幕上的 x, y 坐标
@@ -56,7 +58,7 @@ screen.unmount(fnName)
 - **unmountAll** 卸载所有显示函数
 screen.unmountAll()
 - **on** 监听事件（目前仅支持点击事件）
-```
+``` javascript
 screen.on("click", function(mousePos) {
   // do something
 })
