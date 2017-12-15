@@ -60,7 +60,7 @@ screen.on("click", function(mousePos) {
 ```
 
 #### brush methods
-`brush.drawPixel(x, y, color)` 点亮屏幕上的像素点
+- `brush.drawPixel(x, y, color)` 点亮屏幕上的像素点
 
 ``` javascript
 @param {Number} x 横坐标
@@ -69,21 +69,15 @@ screen.on("click", function(mousePos) {
 brush.drawPixel(x, y, color)
 ```
 
-`brush.drawLine(startX, startY, endX, endY, color)` 画**直**线
-
-`brush.fillRect(x, y, width, height, color)` 填充矩形
-
-`brush.drawRect(x, y, width, height, color)` 画矩形框
-
-`brush.drawMatrix(x, y, mat, [color])` 根据二维数组画图
-
+- `brush.drawLine(startX, startY, endX, endY, color)` 画**直**线
+- `brush.fillRect(x, y, width, height, color)` 填充矩形
+- `brush.drawRect(x, y, width, height, color)` 画矩形框
+- `brush.drawMatrix(x, y, mat, [color])` 根据二维数组画图
 //注意：1. 数组 mat 元素的值为 0 或 1；2. 如果 color 省略，那么元素的值必须是 css color string
-
-`brush.drawLetter(x, y, letter, fontName, color)` 显示单个字母
+- `brush.drawLetter(x, y, letter, fontName, color)` 显示单个字母
 ``` javascript
 @param letter {String} 单个字母
 @param fontName {String} 字体名 ['big', 'small']
 drawLetter (x, y, letter, fontName, color)
 ```
-
-`brush.drawWords(x, y, words, fontName, color)` 显示一个或多个单词
+- `brush.drawWords(x, y, words, fontName, color)` 显示一个或多个单词
