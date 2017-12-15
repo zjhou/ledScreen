@@ -39,7 +39,7 @@ const screen = new LedScreen('wrapperId', option)
 - **pixelColor** 像素颜色
 - **gutter** 像素间隔
 
-#### screen 的方法
+#### screen methods
 - **turnOff** 关闭屏幕
 `screen.turnOff()`
 - **turnOn** 打开屏幕
@@ -63,6 +63,6 @@ screen.on("click", function(mousePos) {
   // do something
 })
 ```
-#### brush 函数
+#### brush methods
 
 待续...
