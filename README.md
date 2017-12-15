@@ -53,8 +53,8 @@ screen.mount(function(brush, mousePos){
 ```
 - **unmount** 卸载显示函数
 screen.unmount(fnName)
-- **unmount** 卸载所有显示函数
-screen.unmount()
+- **unmountAll** 卸载所有显示函数
+screen.unmountAll()
 - **on** 监听事件（目前仅支持点击事件）
 screen.on("click", function(mousePos) {
   // do something
