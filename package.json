@@ -1,6 +1,6 @@
 {
   "name": "ledscreen",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "模拟低分辨率显示屏",
   "main": "index.js",
   "directories": {
