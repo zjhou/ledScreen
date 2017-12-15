@@ -1,19 +1,19 @@
-### Intro
+### 简介
 模拟低分辨率显示屏幕
 
-### Demo
+### 演示
 待定
 
-### Install
+### 安装
 `npm install ledscreen`
 
-### Usage
+### 用法
 ``` javascript
+// 0. 引入
 import LedScreen from 'ledscreen'
 
 // 1. 初始化
-// screenWrapper 容器 id
-const screen = new LedScreen('screenWrapper', {
+const screen = new LedScreen('wrapperId', {
     bgColor: '#000',    // 屏幕背景色
     pixelHt: 6,         // 像素粒高度
     pixelWd: 6,         // 像素粒宽度
@@ -21,7 +21,7 @@ const screen = new LedScreen('screenWrapper', {
     gutter: 1,          // 像素间隔
 });
 
-// 2. 显示(完整工具列表见 API 部分)
+// 2. 显示
 let drawRect = (brush) => brush.drawRect(1, 1, 20, 10, '#ff8888');
 screen.mount(drawRect)
 ```
@@ -44,40 +44,32 @@ const screen = new LedScreen('wrapperId', option)
 - `screen.turnOn()` 打开屏幕
 - `screen.destroy()` 销毁屏幕
 - `screen.mount(cbFn)` 加载显示函数
-``` javascript
-screen.mount(function(brush, mousePos){
-  // use brush draw something.
-  // mousePos.x mousePos.y 鼠标在屏幕上的 x, y 坐标
-})
-```
+  - `cbFn(brush, mousePos)`
+  - `brush` {Object} 详细方法见 brush method 部分
+  - `mousePos` {Object} 鼠标在 LedScreen 上的坐标
+  - `mousePos.x` {Number} 横坐标
+  - `mousePos.y` {Number} 纵坐标
+
 - `screen.unmount(fnName)` 卸载显示函数
 - `screen.unmountAll()` 卸载所有显示函数
 - `screen.on('click', cbFn)` 监听点击事件
-``` javascript
-screen.on("click", function(mousePos) {
-  // do something
-})
-```
+  - `cbFn(mousePos)`
 
 #### brush methods
 - `brush.drawPixel(x, y, color)` 点亮屏幕上的像素点
-
-``` javascript
-@param {Number} x 横坐标
-@param {Number} y 横坐标
-@param {String} css color string
-brush.drawPixel(x, y, color)
-```
+  - `x` {Number}
+  - `y` {Number}
+  - `color` {String} css color string
 
 - `brush.drawLine(startX, startY, endX, endY, color)` 画**直**线
 - `brush.fillRect(x, y, width, height, color)` 填充矩形
 - `brush.drawRect(x, y, width, height, color)` 画矩形框
 - `brush.drawMatrix(x, y, mat, [color])` 根据二维数组画图
-//注意：1. 数组 mat 元素的值为 0 或 1；2. 如果 color 省略，那么元素的值必须是 css color string
-- `brush.drawLetter(x, y, letter, fontName, color)` 显示单个字母
-``` javascript
-@param letter {String} 单个字母
-@param fontName {String} 字体名 ['big', 'small']
-drawLetter (x, y, letter, fontName, color)
-```
+  1. 如果指定 `color` ，那么 `mat` 数组的元素必须是数字 `0` 或数字 `1`
+  2. 如果省略 `color` ，那么 `mat` 数组的元素必须是 `color`
+
+- `brush.drawLetter(x, y, letter, fontName, color)` 显示**单个**字母
+  - `letter` {String} **单个**字母
+  - `fontName` {String} 字体名，合法值：`big` 和 `small`
+
 - `brush.drawWords(x, y, words, fontName, color)` 显示一个或多个单词
