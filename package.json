@@ -7,7 +7,9 @@
     "lib": "lib"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "microbundle -o dist --compress",
+    "dev": "microbundle watch"
   },
   "repository": {
     "type": "git",
@@ -22,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/zjhou/ledScreen/issues"
   },
-  "homepage": "https://github.com/zjhou/ledScreen#readme"
+  "homepage": "https://github.com/zjhou/ledScreen#readme",
+  "devDependencies": {
+    "microbundle": "^0.2.4"
+  }
 }

@@ -5,7 +5,8 @@
 待定
 
 ### 安装
-`npm install ledscreen`
+- `npm install ledscreen`
+- `<script src="dist/ledscreen.js"></script>`
 
 ### 用法
 ``` javascript
