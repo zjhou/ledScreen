@@ -84,6 +84,12 @@ class Button {
 }
 
 let title = 'LedScreen Demo',
+    counter = (function () {
+        let i = 0;
+        return function () {
+            return i += 1;
+        }
+    })(),
     showTitle = brush => {
         brush.drawWords(2, 2, title, 'small', '#00ac50');
     },
@@ -133,7 +139,11 @@ let pages = [
             title: drawPageTitle('3. drawImage'),
             content: brush => {
                 try {
-                    brush.drawImage('images/Walle.png', (Screen.col - 80) / 2, (Screen.row - 80) / 2, 80);
+                    brush.drawImage('images/Walle.png',
+                        (Screen.col - Screen.row * .5) / 2,
+                        (Screen.row - Screen.row * .5) / 2,
+                        parseInt(Screen.row * .5)
+                    );
                 }
                 catch (e) {
                     return false;
