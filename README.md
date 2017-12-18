@@ -8,7 +8,7 @@
 - `npm install ledscreen`
 - `<script src="dist/ledscreen.js"></script>`
 
-### 用法
+### 使用
 ``` javascript
 // 0. 引入
 import LedScreen from 'ledscreen'
