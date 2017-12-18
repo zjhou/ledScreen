@@ -2,13 +2,13 @@
 模拟低分辨率显示屏幕
 
 ### 演示
-待定
+[LedScreen Demo](http://blog.zjhou.me/ledScreen/)
 
 ### 安装
 - `npm install ledscreen`
 - `<script src="dist/ledscreen.js"></script>`
 
-### 用法
+### 使用
 ``` javascript
 // 0. 引入
 import LedScreen from 'ledscreen'
