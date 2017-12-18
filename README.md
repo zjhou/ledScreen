@@ -2,7 +2,7 @@
 模拟低分辨率显示屏幕
 
 ### 演示
-待定
+[LedScreen Demo](http://blog.zjhou.me/ledScreen/)
 
 ### 安装
 - `npm install ledscreen`
