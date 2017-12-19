@@ -6,7 +6,7 @@
 
 
 # LedScreen
-模拟低分辨率显示屏幕
+Pseudo led screen
 
 ### Demo
 [LedScreen Demo](http://blog.zjhou.me/ledScreen/)
