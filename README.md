@@ -1,7 +1,6 @@
 <p align="center">
   <img src="https://github.com/zjhou/ledScreen/blob/master/doc/logo.png" alt="ledScreen" title="ledscreen">
   <br><br>
-  <img src="https://img.shields.io/travis/rust-lang/rust.svg?style=flat"/  alt="travis">
 </p>
 
 
