@@ -1,19 +1,21 @@
-<p align="center" style="margin: 100px 0">
+<p align="center">
   <img src="https://github.com/zjhou/ledScreen/blob/master/doc/logo.png" alt="ledScreen" title="ledscreen">
+  <br><br>
+  <img src="https://img.shields.io/travis/rust-lang/rust.svg?style=flat"/  alt="travis">
 </p>
 
 
-### 简介
+### Intro
 模拟低分辨率显示屏幕
 
-### 演示
+### Demo
 [LedScreen Demo](http://blog.zjhou.me/ledScreen/)
 
-### 安装
+### Install
 - `npm install ledscreen`
 - `<script src="dist/ledscreen.js"></script>`
 
-### 使用
+### Usage
 ``` javascript
 // 0. 引入
 import LedScreen from 'ledscreen'
