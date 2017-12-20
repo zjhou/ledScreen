@@ -12,6 +12,10 @@ const screen = new LedScreen('wrapperId', option)
 - `pixelColor` 像素颜色
 - `gutter` 像素间隔
 
+#### screen properties
+- `screen.row`
+- `screen.col`
+
 #### screen methods
 - `screen.turnOff()` 关闭屏幕
 - `screen.turnOn()` 打开屏幕
