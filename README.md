@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/zjhou/ledScreen/blob/master/doc/logo.png" alt="ledScreen" title="ledscreen">
+  <img src="https://raw.githubusercontent.com/zjhou/ledScreen/master/doc/logo.png" alt="ledScreen" title="ledscreen">
   <br><br>
   <img src="https://img.shields.io/badge/build-passing-green.svg?style=flat-square"/>
   <a href="https://www.npmjs.com/package/ledscreen"><img src="https://img.shields.io/badge/npm-v1.0.7-blue.svg?style=flat-square"/></a>
@@ -26,5 +26,5 @@ let drawRect = (brush) => brush.drawRect(1, 1, 20, 10, '#ff8888');
 screen.mount(drawRect)
 ```
 
-### DOC
+### Doc
 [LedScreen API](https://github.com/zjhou/ledScreen/tree/master/doc)
