@@ -26,5 +26,5 @@ let drawRect = (brush) => brush.drawRect(1, 1, 20, 10, '#ff8888');
 screen.mount(drawRect)
 ```
 
-### DOC
+### Doc
 [LedScreen API](https://github.com/zjhou/ledScreen/tree/master/doc)
