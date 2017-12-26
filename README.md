@@ -2,7 +2,7 @@
   <img src="https://raw.githubusercontent.com/zjhou/ledScreen/master/doc/logo.png" alt="ledScreen" title="ledscreen">
   <br><br>
   <img src="https://img.shields.io/badge/build-passing-green.svg?style=flat-square"/>
-  <a href="https://www.npmjs.com/package/ledscreen"><img src="https://img.shields.io/badge/npm-v1.0.8-blue.svg?style=flat-square"/></a>
+  <a href="https://www.npmjs.com/package/ledscreen"><img src="https://img.shields.io/badge/npm-v1.0.9-blue.svg?style=flat-square"/></a>
   <br><br>
 </p>
 
