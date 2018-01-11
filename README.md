@@ -11,7 +11,7 @@
 Pseudo led screen
 
 ### Demo
-[LedScreen Demo](http://blog.zjhou.com/ledScreen/)
+[LedScreen Demo](https://zjhou.github.io/ledScreen/)
 
 ### Install
 - `npm install ledscreen`
